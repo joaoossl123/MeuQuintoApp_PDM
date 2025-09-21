@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora do João Marcos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@android:color/black" />
+
+
+    <EditText
+        android:id="@+id/visor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray"
+        android:enabled="false"
+        android:gravity="end"
+        android:inputType="none"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+
+        <TableRow>
+            <Button android:text="7" style="@style/Widget.AppCompat.Button.Colored"/>
+            <Button android:text="8" style="@style/Widget.AppCompat.Button.Colored"/>
+            <Button android:text="9" style="@style/Widget.AppCompat.Button.Colored"/>
+            <Button android:text="÷" style="@style/Widget.AppCompat.Button.Colored"/>
+        </TableRow>
+
+
+        <TableRow>
+            <Button android:text="4"/>
+            <Button android:text="5"/>
+            <Button android:text="6"/>
+            <Button android:text="×"/>
+        </TableRow>
+
+
+        <TableRow>
+            <Button android:text="1"/>
+            <Button android:text="2"/>
+            <Button android:text="3"/>
+            <Button android:text="-"/>
+        </TableRow>
+
+
+        <TableRow>
+            <Button android:text="0"/>
+            <Button android:text="."/>
+            <Button android:text="="/>
+            <Button android:text="+"/>
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</LinearLayout>
